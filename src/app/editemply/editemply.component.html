@@ -1,0 +1,40 @@
+<h2>UpdateUsers</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>firstName</th>
+      <th>Lastname</th>
+      <th>Gmail</th>
+      <th>gender</th>
+      <th>phone</th>
+      <th>city</th>
+      <th>address</th>
+      <th>nationality</th>
+      <th scope="col">Option</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr *ngFor="let item of emplyarray">
+   
+      <td>{{item.firstname}}</td>
+      <td>{{item.lastname}}</td>
+      <td>{{item.gmail}}</td>
+      <td>{{item.gender}}</td>
+      <td>{{item.phone}}</td>
+      <td>{{item.city}}</td>
+      <td>{{item.address}}</td>
+      <td>{{item.nationality}}</td>
+    
+
+     
+
+    </tr>
+
+   
+
+  </tbody>
+</table>

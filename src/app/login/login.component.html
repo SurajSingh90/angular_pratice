@@ -1,0 +1,40 @@
+<div class="body">
+<h2>Welcome to CrawlApp</h2>
+<div class="login">
+   
+    <form [formGroup]="myfrom" (ngSubmit)="submit()">
+        <div >
+            <label for="">Enter Name</label>
+            <input type="text"  formControlName ="firstname" class="text_wrap" placeholder="enter name" name="Uname"  id="Uname" >
+            <div *ngIf="cf['firstname'].touched && cf['firstname'].invalid" class="alert alert-danger" >
+
+            </div>
+        </div>
+        <br>
+        <div >
+            <label for="">Enter gmail</label>
+            <input type="text"  formControlName ="gmail" class="text_wrap" placeholder="enter gmail" name="Uname"  id="Uname" >
+            <div *ngIf="cf['gmail'].touched && cf['gmail'].invalid" class="alert alert-danger" >
+
+            </div> 
+        </div> 
+        <br>
+       <div>
+        <label for="">Enter password</label>
+        <input type="text" class="text_wrap" formControlName ="password" placeholder="password" id="Uname"  >
+       </div>
+       <div>
+        <br>
+        <!-- <input type="button"  (ngSubmit)="submit()"> -->
+        <button type="submit" (click)="loginpage()" name="log" id="log" value="Log In Here">submit</button>
+       </div>
+       <br>
+       <div>
+        <input type="checkbox" id="check">
+        <span>Remember Me</span>
+       </div>
+    </form>
+
+</div>
+</div>
+

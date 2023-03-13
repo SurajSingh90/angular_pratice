@@ -1,0 +1,98 @@
+<div class="body">
+   
+    <div class="login">
+        <h2>Add to Employee</h2>
+       
+            
+       
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" >
+            
+            <div>
+                <label for="">Enter FirstName</label>
+                <input type="text" formControlName="firstname" placeholder="enter name" class="text_wrap" name="Uname"
+                    id="Uname" >
+             
+
+            </div>
+            <br>
+            <div>
+                <label for="">Enter lastname</label>
+                <input type="text" formControlName="lastname" class="text_wrap" placeholder="enter lastname"
+                    name="Uname" id="Uname">
+
+            </div>
+            <br>
+            <div>
+                <label for="">Enter gmail</label>
+                <input type="text" formControlName="gmail" class="text_wrap" placeholder="enter gmail" name="Uname"
+                    id="Uname">
+
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="">Phone</label>
+                <input type="text" formControlName="phone" class="text_wrap" placeholder="enter phone" name="Uname"
+                    id="Uname">
+
+            </div>
+            <br>
+            <div>
+                <label for="">Enter gender</label>
+                <input type="text" formControlName="gender" class="text_wrap" placeholder="enter gender" name="Uname"
+                    id="Uname">
+
+            </div>
+            <br>
+            <div>
+                <label for="">Enter city</label>
+                <input type="text" formControlName="city" class="text_wrap" placeholder="enter city" name="Uname"
+                    id="Uname">
+
+            </div>
+            <br>
+            <div>
+                <label for="">Enter address
+                </label>
+                <input type="text" formControlName="address" class="text_wrap" placeholder="enter address" name="Uname"
+                    id="Uname">
+
+            </div>
+            <br>
+            <div>
+                <label for="">Enter
+                    nationality
+
+                </label>
+                <input type="text" formControlName="nationality" class="text_wrap" placeholder="enter nationality"
+                    name="Uname" id="Uname">
+
+            </div>
+            <br>
+
+            <div>
+                <label for="">Enter password</label>
+                <input type="text" class="text_wrap" formControlName="password" placeholder="password" id="Uname"
+                    class="text_wrap">
+            </div>
+            <br>
+            <div>
+                <label for="">Enter confirmpassword</label>
+                <input type="text" class="text_wrap" formControlName="confirmpassword" placeholder="password" id="Uname"
+                    class="text_wrap">
+            </div>
+            <br>
+
+            <div>
+                <br>
+                <button type="submit" (click)="submitbutton()" *ngIf="!this.employerId.id" name="log" id="log" value="Log In Here">submit</button>
+                <button type="submit" (click)="updateEmployer()" *ngIf="this.employerId.id" name="log" id="log" value="Log In Here">update</button>
+
+            </div>
+         
+
+        </form>
+     
+
+    </div>
+</div>
